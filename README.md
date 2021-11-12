@@ -4,6 +4,6 @@ Angle data is a simple data type.
 Comments start with `$`.
 # Data entry
 ```
-<package name> ^ <repo url>
+<identifier> ^ <value>
 ```
-`^` works as a data assigner, `package name` is the value name, and `repo url` is the value.
+`^` works as a data assigner, `identifier` is the value name, and `value` is the value.
