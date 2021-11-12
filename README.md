@@ -1,5 +1,10 @@
 # angledat
 Angle data is a simple data type.
+
+# Installing + using
+Put `angledat.py` in the main dir of your project.  
+Import it and use.
+
 # Comments
 Comments start with `$`.
 # Data entry
