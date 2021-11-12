@@ -21,7 +21,7 @@ def read_dict(filename):
                 print("ERROR: To many assign symbols!")
                 quit()
             valuename, valuevalue = inp.split("^")
-            values[valuename] = valuevalue
+            values[valuename.strip()] = valuevalue.strip()
     return values
 
 
