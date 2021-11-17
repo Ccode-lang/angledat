@@ -4,8 +4,7 @@ def read_dict(filename):
         file = filedat.readlines()
         filedat.close()
     except:
-        print("ERROR: Not able to open file!")
-        quit()
+        raise OSError("ERROR: Not able to open file!")
     values = {}
     #loop start
     for line in file:
@@ -15,11 +14,9 @@ def read_dict(filename):
             continue
         else:
             if not "^" in inp:
-                print("ERROR: Data assigned wrong!")
-                quit()
+                raise OSError("ERROR: Data assigned wrong!")
             if inp.count("^") > 1:
-                print("ERROR: To many assign symbols!")
-                quit()
+                raise OSError("ERROR: To many assign symbols!")
             valuename, valuevalue = inp.split("^")
             values[valuename.strip()] = valuevalue.strip()
     return values
