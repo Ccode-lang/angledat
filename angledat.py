@@ -1,3 +1,4 @@
+# This file is from Angle Data
 def read_dict(filename):
     try:
         filedat = open(filename, 'r')
