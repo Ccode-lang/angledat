@@ -22,4 +22,11 @@ def read_dict(filename):
             values[valuename.strip()] = valuevalue.strip()
     return values
 
-
+def getinhistory(filename, defin=0):
+    value = None
+    counter = 0
+    dict = read_dict(filename)
+    for name, value in dict:
+        if counter == defin:
+            value = value
+        counter += 1
